@@ -1,19 +1,78 @@
-.navbar-container {
-	box-sizing: border-box;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	margin: 6px 0;
-	padding: 10px 20px;
-	border-radius: 18px;
-	background: #2b6cb0; /* blue pill */
-	color: #ffffff;
-	box-shadow: 0 6px 18px rgba(43,108,176,0.18);
-	width: auto;
-	min-width: 180px;
-}
-.navbar-container .component-label {
-	font-weight: 700;
-	text-align: center;
+/* Container */
+.navbar {
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: sans-serif;
 }
 
+/* Logo + Title */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Keep logo/title from shrinking so links can center */
+.navbar-left {
+  flex: 0 0 auto;
+}
+
+.navbar-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.navbar-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Center the nav links and allow them to take available space evenly */
+.navbar-links {
+  flex: 1 1 auto;
+  justify-content: center;
+}
+
+.navbar-links li {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Button */
+.navbar-btn {
+  padding: 10px 28px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: transparent;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Prevent the button from shrinking so the centered links stay centered */
+.navbar-btn {
+  flex: 0 0 auto;
+}
+
+/* Anchor styling for navbar links: black and no underline */
+.navbar-links a {
+  color: #000;
+  text-decoration: none;
+}
+.navbar-links a:hover,
+.navbar-links a:focus {
+  text-decoration: none;
+  outline: none;
+}
