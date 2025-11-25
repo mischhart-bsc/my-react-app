@@ -1,0 +1,17 @@
+.footer-container {
+	box-sizing: border-box;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin: 8px 0 18px 0;
+	padding: 16px 26px;
+	border-radius: 12px;
+	background: #222222; /* dark footer button */
+	color: #ffffff;
+	width: 260px;
+	box-shadow: 0 8px 24px rgba(15,23,42,0.12);
+}
+.footer-container .footer-note {
+	opacity: 0.95;
+}
+

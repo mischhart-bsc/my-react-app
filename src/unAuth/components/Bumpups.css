@@ -1,0 +1,18 @@
+.bumpups-container {
+	box-sizing: border-box;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin: 8px 0;
+	padding: 18px 26px;
+	border-radius: 12px;
+	background: #efefef; /* light gray button */
+	color: #111;
+	width: 260px;
+	box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+}
+.bumpups-container .component-label {
+	font-weight: 700;
+	text-align: center;
+}
+

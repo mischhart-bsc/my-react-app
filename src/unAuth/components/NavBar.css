@@ -1,0 +1,19 @@
+.navbar-container {
+	box-sizing: border-box;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin: 6px 0;
+	padding: 10px 20px;
+	border-radius: 18px;
+	background: #2b6cb0; /* blue pill */
+	color: #ffffff;
+	box-shadow: 0 6px 18px rgba(43,108,176,0.18);
+	width: auto;
+	min-width: 180px;
+}
+.navbar-container .component-label {
+	font-weight: 700;
+	text-align: center;
+}
+
