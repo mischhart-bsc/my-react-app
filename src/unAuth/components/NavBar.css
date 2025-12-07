@@ -4,7 +4,7 @@
   padding: 20px 40px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   font-family: sans-serif;
 }
 
@@ -42,8 +42,10 @@
 
 /* Center the nav links and allow them to take available space evenly */
 .navbar-links {
-  flex: 1 1 auto;
-  justify-content: center;
+  flex: 1;
+  justify-content: flex-end;
+  gap: 40px;
+  margin-right: 40px;
 }
 
 .navbar-links li {

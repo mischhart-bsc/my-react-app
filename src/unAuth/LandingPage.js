@@ -5,19 +5,18 @@ import Bumpups from './components/Bumpups';
 import Footer from './components/Footer';
 import Timestamp from './components/Timestamp';
 
-export default function LandingPage() {
+const LandingPage = () => {
 	return (
-		<div className="landing-root">
-			<div className="landing-card">
-				<div className="landing-page-container">
-					<NavBar />
-					<h1 className="landing-title">Hello Landing Page</h1>
-					<Bumpups />
-					<Timestamp />
-					<Footer />
-				</div>
+		<div className="landing-page-container">
+			<div className="landing-content-wrapper">
+				<NavBar />
+				<Bumpups />
+				<Timestamp />
+				<Footer />
 			</div>
 		</div>
 	);
-}
+};
+
+export default LandingPage;
 

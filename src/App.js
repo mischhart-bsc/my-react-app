@@ -4,7 +4,9 @@ import LandingPage from './unAuth/LandingPage';
 function App() {
   return (
     <div className="App">
-      <LandingPage />
+      <div className="App-container">
+        <LandingPage />
+      </div>
     </div>
   );
 }

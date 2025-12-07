@@ -18,7 +18,7 @@ const NavBar = () => {
         </li>
       </ul>
 
-      <button className="navbar-btn">"Do More With Video"</button>
+      <button className="navbar-btn">Do More With Video</button>
     </nav>
   );
 };

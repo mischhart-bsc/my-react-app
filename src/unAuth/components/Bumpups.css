@@ -1,18 +1,135 @@
-.bumpups-container {
+/* --- NEU: äussere Sektion + Header über dem Grid --- */
+
+.bumpups-section {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 48px 24px;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.bumpups-header-wrapper {
+	margin-bottom: 24px;
+}
+
+.bumpups-header {
+	font-size: clamp(1.8rem, 3vw, 2.3rem);
+	font-weight: 700;
+	margin: 0 0 8px;
+	color: #f5f5f5;
+}
+
+.bumpups-header a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.bumpups-header a:hover,
+.bumpups-header a:focus {
+	text-decoration: underline;
+}
+
+.bumpups-header-highlight {
+	color: #0bcf83; /* hebt "ups" hervor */
+}
+
+.bumpups-description {
+	max-width: 640px;
+	margin: 0;
+	font-size: 0.95rem;
+	line-height: 1.6;
+	color: #d4d4d4;
+}
+
+
+
+/* --- DEIN BISHERIGES CSS (unverändert übernommen) --- */
+
+.bumpups-grid {
 	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	gap: 18px;
+	width: 100%;
+}
+
+.bumpups-card {
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	padding: 18px 20px;
+	border-radius: 14px;
+	background: #1f1f1f;
+	color: #f5f5f5;
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.28);
+}
+
+.bumpups-content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 12px;
+}
+
+.bumpups-tag {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	margin: 8px 0;
-	padding: 18px 26px;
-	border-radius: 12px;
-	background: #efefef; /* light gray button */
-	color: #111;
-	width: 260px;
-	box-shadow: 0 6px 18px rgba(15,23,42,0.06);
-}
-.bumpups-container .component-label {
-	font-weight: 700;
-	text-align: center;
+	padding: 8px 12px;
+	border-radius: 10px;
+	background: #0bcf83;
+	color: #0f172a;
+	font-weight: 800;
+	font-size: 15px;
 }
 
+.bumpups-cta {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	color: #f5f5f5;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 15px;
+}
+
+.bumpups-cta:hover {
+	text-decoration: underline;
+}
+
+.cta-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	background: #0f0f0f;
+	border: 1px solid #333;
+}
+
+.bumpups-illustration {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 72px;
+	min-height: 72px;
+	color: #ffffff;
+}
+
+@media (max-width: 640px) {
+	.bumpups-card {
+		flex-direction: row;
+	}
+}
+
+@media (max-width: 480px) {
+	.bumpups-card {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.bumpups-content {
+		align-items: flex-start;
+	}
+}
